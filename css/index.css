@@ -60,6 +60,11 @@
     height: 100%;
     object-fit: cover;
 }
+.centerBtn {
+    width: 100%;
+    display: grid;
+    place-items: center;
+}
 /* The code above is the css for sticky image behaviour while scrolling down*/
 
 
