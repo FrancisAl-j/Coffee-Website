@@ -7,6 +7,55 @@
 /* .attachment-full{
     padding: 1rem;
 } */
+/* CSS for information in footer */
+.container-footer {
+    display: flex;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    flex-direction: row;
+
+}
+.container-footer > div {
+    flex: 1 1 calc(450px / 3);
+}
+.day {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 30px;
+}
+.day span {
+    width: min(100% - 1px, 220px);
+    border-bottom: 1px solid #000;
+}
+.day p:first-child {
+    text-transform: uppercase;
+    font-weight: 300;
+}
+.container-footer  h1 {
+    font-size: 30px;
+    text-transform: uppercase;
+    padding: 10px;
+}
+.contact-info {
+    padding: 0 20px;
+}
+.contact-info p {
+    font-size: 23px;
+    margin: 10px 0;
+}
+.contact-info .contact-email {
+    text-decoration: underline;
+    cursor: pointer;
+}
+.contact-info .contact-email:hover {
+    color: blue;
+}
+.location-address p {
+    font-size: 23px;
+    text-transform: capitalize;
+}
+
 /* CSS for honepage */
 .container-content {
     display: flex;
@@ -221,6 +270,7 @@
     align-items: center;
     flex-direction: column;
     gap: 20;
+    margin: 0 0 353px 0;
 }
 .menu-page h2 {
     font-size: 1.875rem;
@@ -437,7 +487,7 @@ textarea {
 .footer {
     width: 100%;
     position: fixed;
-    height: 328px;
+    height: 340px;
     bottom: 0;
     z-index: -1;
     background: #fff;
